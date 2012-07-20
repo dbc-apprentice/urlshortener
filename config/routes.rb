@@ -1,5 +1,10 @@
 Urlshortener::Application.routes.draw do
+  
+  get "s/index"
 
+  redirect "/:id" => "address"
+  
+  # match id, 
 
   resources :urls
 
