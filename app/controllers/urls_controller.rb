@@ -9,6 +9,8 @@ class UrlsController < ApplicationController
 
   def create
     @urls = Url.create(params[:url])
+    @urls.short_url
+    @urls.save
     redirect_to url_path(@urls)
   end
 
