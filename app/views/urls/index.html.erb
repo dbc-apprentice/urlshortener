@@ -1,0 +1,12 @@
+<h1>Here are the shortened urls </h1>
+
+<% @urls.each do |url|%>
+  <h3><%= url.address%></h3>
+  <ul>
+    <li> <%= url.id%>
+  </ul>
+
+<% end%>
+
+<%= link_to "Click here to create new urls", new_url_path %>
+
