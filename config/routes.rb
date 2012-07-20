@@ -1,4 +1,16 @@
 Urlshortener::Application.routes.draw do
+  get "urls/index"
+
+  get "urls/show"
+
+  get "urls/create"
+
+  get "urls/new"
+
+  get "urls/update"
+
+  get "urls/destroy"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
